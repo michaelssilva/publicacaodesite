@@ -1,0 +1,188 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .header-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            color: white;
+            font-family: 'Inter', sans-serif;
+            line-height: 160%;
+            font-size: 40px;
+            margin-top: 16px;
+        }
+
+        .profile {
+            text-align: justify;
+            padding: 20px;
+        }
+        
+        .content {
+            display: flex;
+            flex-direction: row; /* Layout em linha (horizontal) */
+            align-items: center; /* Centralizar verticalmente */
+            justify-content: center; /* Centralizar horizontalmente */
+            margin-bottom: 20px; /* Espaço entre a foto e o parágrafo */
+        }
+        
+        .profile img {
+            max-width: 100%;
+            margin-right: 20px; /* Espaço à direita da imagem */
+        }
+
+
+        body {
+            background-image: url(./assets/Fundo.jpg);
+            background-position: top center;
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-color: #121214;
+        }
+
+        body * {
+            font-family: 'Inter', sans-serif;
+            line-height: 160%;
+        }
+
+
+        img {
+            border-radius: 15px;
+        }
+
+        main {
+            max-width: 580px;
+            width: 90%;
+            margin: 32px auto;
+            display: grid;
+            gap: 24px;
+        }
+
+        .games-list {
+            justify-content: center;
+            transition: transform .3s;
+        }
+
+        .social-list {
+            justify-content: center;
+            transition: transform .3s;
+            ransform: scale(1.1);
+        }
+
+        section ul li:hover {
+            transform: scale(1.1);
+        }
+
+        section {
+            color: white;
+            background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+            padding-top: 4px;
+            border-radius: 10px;
+        }
+
+        section h2 {
+            font-weight: 900;
+            font-size: 24px;
+            letter-spacing: -0.47px;
+        }
+
+        #conecte {
+            padding: 0 0 0 21px;
+        }
+
+        section p {
+            font-weight: 400;
+            font-size: 16px;
+            letter-spacing: -0.18px;
+            color: #A1A1AA;
+        }
+
+        section div {
+            background-color: #2A2634;
+            padding: 32px;
+            padding-top: 24px;
+            border-radius: 8px;
+        }
+
+        section ul {
+            margin-top: 24px;
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+           
+        }
+        .sobre {
+            display: block;
+
+        }
+
+        .games-list img {
+            width: 90px;
+            border-radius: 8px;
+        }
+
+        /* animation*/
+        /*Definir a animação, qualquer nome, falar onde começa e onde termina;
+        Pelo menos duas propriedades; nome e tempo; Pode ter delay, importante que coloque as propriedades antes para ficar legal*/
+
+        /*Pode ir aplicando propriedades direto nos elementos*/
+
+        header div {
+            animation: fromTop .7s .2s backwards;
+        }
+
+        main section {
+            animation: fromBottom .7s backwards;
+        }
+
+        main section:nth-child(1) {
+            /*main pega o section do filho numero 1*/
+            animation-delay: 0s;
+        }
+
+        main section:nth-child(2) {
+            animation-delay: .3s;
+        }
+
+        main section:nth-child(3) {
+            animation-delay: .6s;
+        }
+
+        @keyframes fromTop {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+
+        @keyframes fromBottom {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
