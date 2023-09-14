@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav id="menu-h">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contato.html">Contatos</a></li>
+            </ul>
+        </nav>
+    
+        <div class="header-container">
+            <img src="Imagens\s-l400.jpg" alt="Grupo" />
+            <h1>Batcaverna</h1>
+        </div>
+    </header>
+    <main>
+    <form action="processar.php" method="POST">
+        <fieldset>
+            <h1>Cadastro de Currículo</h1>
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <label for="fname">Nome:</label>
+                <input type="text" name="fname" id="fname" placeholder="Digite seu nome"/>
+                <br><br>
+
+                <label for="femail">E-mail:</label>
+                <input type="email" name="femail" id="femail" placeholder="Digite seu E-mail"/>
+                <br><br>
+
+                <label for="aniversario">Data de Nascimento:</label>
+                <input type="date" name="aniversario" id="aniversario" />
+                <br /><br />
+
+                <label for="altura">Altura(m):</label>
+                <input type="number" name="altura" id="altura" step="0.1" />
+                <br><br>
+
+                <label for="fsite">Site:</label>
+                <input type="text" name="fsite" placeholder="Facebook, Linkedin"/>
+                <br><br>
+
+                <label for="estadoCivil">Estado Civil:</label>
+                <select name="estadoCivil" id="estadoCivil">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Solteiro</option>
+                    <option>Casado</option>
+                    <option>Viuvo</option>
+                    <option>Separado</option>
+                    <option>Outro</option>
+                </select>
+
+                <br><br>
+
+                <label>Sexo:</label>
+                <input type="radio" name="sexo" id="masculino" value="Masculino" />
+                <label for="masculino">Masculino</label>
+
+                <input type="radio" name="sexo" id="feminino" value="Feminino" />
+                <label for="feminino">Feminino</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Endereço</legend>
+                <label for="fCEP">CEP:</label>
+                <input type="text" name="fCEP" id="fCEP" />
+                <br><br>
+
+                <label for="fendereco">Endereço:</label>
+                <input type="text" name="fendereco" id="fendereco" />
+                <br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contato</legend>
+                <label for="ftelefone">Telefone:</label>
+                <input type="tel" name="ftelefone" id="ftelefone" />
+                <br><br>
+
+                <label for="fcelular">Celular:</label>
+                <input type="tel" name="fcelular" id="fcelular" />
+                <br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Conhecimentos</legend>
+                <input type="checkbox" name="conhecimento1" id="conhecimento1" value="html" />
+                <label for="conhecimento1">HTML</label>
+
+                <input type="checkbox" name="conhecimento2" id="conhecimento2" value="CSS" />
+                <label for="conhecimento2">CSS</label>
+
+                <input type="checkbox" name="conhecimento3" id="conhecimento3" value="JavaScript" />
+                <label for="conhecimento3">JavaScript</label>
+
+                <br><br>
+                <label for="maisConhecimentos">Mais conhecimentos:</label>
+                <textarea name="maisConhecimentos" rows="8" cols="15">
+                    Digite os seus conhecimentos:
+                </textarea>
+                <br><br>
+            </fieldset>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+</main>
+</body>
+</html>
