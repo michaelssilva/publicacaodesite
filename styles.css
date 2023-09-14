@@ -20,6 +20,31 @@
             height: auto;
         }
 
+        #menu-h {
+            background-color: rgb(10, 10, 10);
+        }
+        
+        #menu-h {
+            list-style: none;
+            padding: 0;
+            
+        }
+        
+        #menu-h ul li{
+            display: inline;
+        }
+        
+        #menu-h  ul li a{
+            color: seashell;
+            padding: 20px;
+            display: inline-block;
+            text-decoration: none;
+        }
+        
+        #menu-h  ul li a:hover{
+            background-color: rgb(56, 6, 194);
+        }
+
         h1 {
             color: white;
             font-family: 'Inter', sans-serif;
@@ -81,7 +106,7 @@
         .social-list {
             justify-content: center;
             transition: transform .3s;
-            ransform: scale(1.1);
+            transform: scale(1.1);
         }
 
         section ul li:hover {
@@ -186,3 +211,9 @@
                 transform: translateY(0)
             }
         }
+
+        form {
+            background-color: antiquewhite;
+            
+        }
+
